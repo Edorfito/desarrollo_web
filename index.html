@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resolver Tri&aacute;ngulo</title>
+    <link rel="stylesheet" href="./css/dw.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora Integral de Tri&aacute;ngulos</h1>
+		<h2>An&aacute;lisis completo de un tri&aacute;ngulo a partir de sus tres lados</h2>
+    </header>
+    <main>
+        <form id="triangle-form">
+            <fieldset>
+                <legend>Datos del tri&aacute;ngulo</legend>
+                <label for="sideA">Lado A:</label>
+                <input type="number" id="sideA" min="0" placeholder="Ingrese el lado A" required>
+                <label for="sideB">Lado B:</label>
+                <input type="number" id="sideB" min="0" placeholder="Ingrese el lado B" required>
+                <label for="sideC">Lado C:</label>
+                <input type="number" id="sideC" min="0" placeholder="Ingrese el lado C" required>
+                <button type="submit">Resolver</button>
+            </fieldset>
+        </form>
+        <section id="results">
+            <fieldset>
+                <legend>Resultados</legend>
+                <form>
+                    <label>&Aacute;ngulos (°):</label>
+                    <input type="text" id="angles" readonly>
+                    <label>Medianas:</label>
+                    <input type="text" id="medians" readonly>
+                    <label>Bisectrices:</label>
+                    <input type="text" id="bisectors" readonly>
+                    <label>Alturas:</label>
+                    <input type="text" id="heights" readonly>
+                    <label>Per&iacute;metro y &Aacute;rea:</label>
+                    <input type="text" id="perimeter-area" readonly>
+                </form>
+            </fieldset>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Dise&ntilde;ado por Edgar Figueroa Torres - Geom&aacute;tica - 2024.</p>
+    </footer>
+</body>
+</html>
